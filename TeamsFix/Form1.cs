@@ -25,9 +25,11 @@ namespace TeamsFix
         }
         private void button1_Click_1(object sender, EventArgs e)
         {
-            ClearTeams.EndProcesses("msteams");
-            ClearTeams.EndProcesses("ms-teams"); 
-            ClearTeams.EndProcesses("Teams"); 
+            foreach (var executable in Variables.TeamsExe)
+            {
+                ClearTeams.EndProcesses(executable);
+            }
+            
             foreach (var item in Variables.TeamsDirs)
             {
                 ClearTeams.DeleteItemsRecursively(item);

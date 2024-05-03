@@ -17,5 +17,12 @@ namespace TeamsFix
             @LocalAppData  + "\\Microsoft\\TokenBroker\\",
             @LocalAppData  + "\\Microsoft\\IdentityCache\\"
         };
+
+        public static string[] TeamsExe =
+        {
+            "ms-teams",
+            "msteams",
+            "Teams"
+        };
     }
 }
