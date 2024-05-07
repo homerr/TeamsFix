@@ -17,7 +17,12 @@ namespace TeamsFix
         public override void Write(char value)
         {
             base.Write(value);
-            _output.Invoke(new Action(() => { _output.AppendText(value.ToString()); }));
+            _output.Invoke(new Action(() => 
+            { 
+                _output.AppendText(value.ToString()); 
+                _output.SelectionStart = _output.Text.Length;
+                _output.ScrollToCaret();
+            }));
         }
 
         public override Encoding Encoding

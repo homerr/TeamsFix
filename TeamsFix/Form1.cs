@@ -47,5 +47,10 @@ namespace TeamsFix
             ExplorerOpener opener = new ExplorerOpener();
             opener.OpenAndHighlightFile(teamsPath);
         }
+
+        private void quit_Click_1(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
     }
 }

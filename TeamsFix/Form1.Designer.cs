@@ -34,21 +34,23 @@
             this.teamsgrab = new System.Windows.Forms.Button();
             this.installteams = new System.Windows.Forms.Button();
             this.logBox = new System.Windows.Forms.RichTextBox();
+            this.quit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // fixup
             // 
-            this.fixup.Location = new System.Drawing.Point(105, 63);
+            this.fixup.BackColor = System.Drawing.Color.Tomato;
+            this.fixup.Location = new System.Drawing.Point(100, 47);
             this.fixup.Name = "fixup";
             this.fixup.Size = new System.Drawing.Size(111, 31);
             this.fixup.TabIndex = 10;
             this.fixup.Text = "Fix Teams";
-            this.fixup.UseVisualStyleBackColor = true;
+            this.fixup.UseVisualStyleBackColor = false;
             this.fixup.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // teamsgrab
             // 
-            this.teamsgrab.Location = new System.Drawing.Point(12, 114);
+            this.teamsgrab.Location = new System.Drawing.Point(100, 159);
             this.teamsgrab.Name = "teamsgrab";
             this.teamsgrab.Size = new System.Drawing.Size(111, 26);
             this.teamsgrab.TabIndex = 11;
@@ -58,9 +60,9 @@
             // 
             // installteams
             // 
-            this.installteams.Location = new System.Drawing.Point(193, 114);
+            this.installteams.Location = new System.Drawing.Point(100, 205);
             this.installteams.Name = "installteams";
-            this.installteams.Size = new System.Drawing.Size(118, 26);
+            this.installteams.Size = new System.Drawing.Size(111, 27);
             this.installteams.TabIndex = 12;
             this.installteams.Text = "Teams Install";
             this.installteams.UseVisualStyleBackColor = true;
@@ -74,21 +76,36 @@
             this.logBox.TabIndex = 13;
             this.logBox.Text = "";
             // 
+            // quit
+            // 
+            this.quit.BackColor = System.Drawing.Color.LightSkyBlue;
+            this.quit.Location = new System.Drawing.Point(100, 264);
+            this.quit.Name = "quit";
+            this.quit.Size = new System.Drawing.Size(111, 29);
+            this.quit.TabIndex = 14;
+            this.quit.Text = "Quit";
+            this.quit.UseVisualStyleBackColor = false;
+            this.quit.Click += new System.EventHandler(this.quit_Click_1);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(940, 384);
+            this.Controls.Add(this.quit);
             this.Controls.Add(this.logBox);
             this.Controls.Add(this.installteams);
             this.Controls.Add(this.teamsgrab);
             this.Controls.Add(this.fixup);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Location = new System.Drawing.Point(15, 15);
             this.Name = "Form1";
-            this.Text = "Teams Cleanup";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
         }
+
+        private System.Windows.Forms.Button quit;
 
         private System.Windows.Forms.RichTextBox logBox;
 
