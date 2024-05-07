@@ -15,7 +15,8 @@ namespace TeamsFix
             @LocalAppData  + "\\Microsoft\\Packages\\Microsoft.AAD.BrokerPlugin_cw5n1h2txyewy\\",
             @LocalAppData  + "\\Microsoft\\OneAuth\\",
             @LocalAppData  + "\\Microsoft\\TokenBroker\\",
-            @LocalAppData  + "\\Microsoft\\IdentityCache\\"
+            @LocalAppData  + "\\Microsoft\\IdentityCache\\",
+            @AppDataPath   + "\\Microsoft\\Teams"
         };
 
         public static string[] TeamsExe =
