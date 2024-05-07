@@ -15,6 +15,7 @@ namespace TeamsFix
                 try
                 {
                     process.Kill();
+                    Console.WriteLine("Killed process " + process.Id);
                 }
                 catch (Exception e)
                 {
@@ -33,6 +34,7 @@ namespace TeamsFix
                 foreach (FileInfo file in directoryInfo.GetFiles())
                 {
                     file.Delete();
+                    Console.WriteLine("Deleted file: " + file.Name);
                 }
 
                 // Recursively delete subdirectories
@@ -40,6 +42,7 @@ namespace TeamsFix
                 {
                     DeleteItemsRecursively(subDirectory.FullName);
                     subDirectory.Delete();
+                    Console.WriteLine("Deleted directory: " + subDirectory.Name);
                 }
 
                 // If we reach this point, deletion was successful
@@ -49,6 +52,7 @@ namespace TeamsFix
             catch (Exception ex)
             {
                 // Handle any exceptions (e.g., permission issues, directory not found)
+                Console.WriteLine("ERROR in deletion: " + ex);
                 return false;
             }
         }

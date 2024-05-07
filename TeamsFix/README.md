@@ -45,4 +45,4 @@ Teams
 ## To Do
 
 -  [ ] Add option to remove Teams wide installer (will require admin rights)
--  [ ] Add functionality to download and install "New Teams" if not present
+-  [x] Add functionality to download and install "New Teams" if not present

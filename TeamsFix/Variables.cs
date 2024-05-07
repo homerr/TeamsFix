@@ -25,5 +25,7 @@ namespace TeamsFix
             "msteams",
             "Teams"
         };
+
+        public static string TeamsInstaller = "https://go.microsoft.com/fwlink/?linkid=2196106";
     }
 }
